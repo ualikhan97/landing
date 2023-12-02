@@ -195,9 +195,19 @@ a {
    padding-top: 88px;
 }
 
+.about__stick {
+   width: 124px;
+   height: 2px;
+   background-color: #ffbf1a;
+}
+
 .about__caption {
    font-size: 43px;
-   margin-bottom: 67px;
+   margin-bottom: 34px;
+}
+
+.about__stick {
+   margin-bottom: 34px;
 }
 
 .about__description {
@@ -294,14 +304,11 @@ a {
 
    .about__caption {
       font-size: 35px;
+      margin-bottom: 34px;
    }
 
    .about__wrapper {
       padding-top: 60px;
-   }
-
-   .about__caption {
-      margin-bottom: 60px;
    }
 
    .about__img {
@@ -462,6 +469,10 @@ a {
 
    .about__caption {
       font-size: 25px;
+      margin-bottom: 25px;
+   }
+
+   .about__stick {
       margin-bottom: 25px;
    }
 
