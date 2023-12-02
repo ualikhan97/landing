@@ -426,6 +426,7 @@ a {
    .about__boxes {
       width: 140px;
       height: 100px;
+      flex-grow: 1;
    }
 
    .about__img {
