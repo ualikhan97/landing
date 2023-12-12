@@ -9,76 +9,91 @@
          href="https://fonts.googleapis.com/css2?family=Play&display=swap"
          rel="stylesheet"
       />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
       <link rel="stylesheet" href="css/style.css" />
       <title>Document</title>
    </head>
    <body>
-      <div class="first_wrap">
-         <div class="header">
-            <div class="wrapper">
-               <div class="header__wrapper">
-                  <div class="burger">
-                     <span></span>
-                     <span></span>
-                     <span></span>
-                  </div>
-                  <a href="#" class="header__logo">
-                     <img src="img/icons/logo.svg" alt="" />
-                  </a>
-                  <div class="header__shell">
-                     <nav class="header__menu">
-                        <ul>
-                           <li><a href="#">О нас</a></li>
-                           <li><a href="#">Галерея</a></li>
-                           <li><a href="#">Выбор тура</a></li>
-                           <li><a href="#">Почему мы?</a></li>
-                        </ul>
-                     </nav>
-                  </div>
-                  <div class="header__conctacts">
-                     <button class="header__button">Перезвонить вам?</button>
-                     <a href="tel:+7 495-249-00-44" class="header__number"
-                        >+7 495-249-00-44</a
-                     >
-                  </div>
+      <header class="header">
+         <div class="wrapper">
+            <div class="header__wrapper">
+               <div class="burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+               <div href="#" class="logo header__logo">
+                  <img src="img/icons/logo.svg" alt="" />
+               </div>
+               <div class="header__shell">
+                  <nav class="menu header__menu">
+                     <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Выбор тура</a></li>
+                        <li><a href="#">Почему мы?</a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="header__conctacts">
+                  <button class="header__button">Перезвонить вам?</button>
+                  <a href="tel:+7 495-249-00-44" class="number header__number"
+                     >+7 495-249-00-44</a
+                  >
                </div>
             </div>
          </div>
+      </header>
 
-         <section class="introduce">
-            <div class="wrapper">
-               <div class="introduce__wrapper">
-                  <div class="introduce__left">
-                     <div class="introduce__title">
-                        Получите незабываемые эмоции за 5 дней sup-прогулок по
-                        живописным местам
-                     </div>
-                     <div class="introduce__subtitle">
-                        Сэкономьте 15% при заказе авторского тура в сентябре
-                     </div>
-                     <button class="btn btn__long">Забронировать</button>
+      <section class="introduce">
+         <div class="wrapper">
+            <div class="introduce__wrapper">
+               <div class="introduce__left">
+                  <div class="introduce__title">
+                     Получите незабываемые эмоции за 5 дней sup-прогулок по
+                     живописным местам
                   </div>
-                  <div class="introduce__socials">
-                     <div class="introduce__icon">
-                        <img src="img/icons/whatsapp.svg" alt="" />
-                     </div>
-                     <div class="introduce__icon">
-                        <img src="img/icons/instagram.svg" alt="" />
-                     </div>
-                     <div class="introduce__icon">
-                        <img src="img/icons/telegram.svg" alt="" />
-                     </div>
+                  <div class="introduce__subtitle">
+                     Сэкономьте 15% при заказе авторского тура в сентябре
                   </div>
+                  <button class="btn">Забронировать</button>
+               </div>
+               <div class="introduce__socials">
+                  <a
+                     href="https://www.whatsapp.com/"
+                     target="_blank"
+                     class="introduce__icon"
+                  >
+                     <img src="img/icons/whatsapp.svg" alt="" />
+                  </a>
+                  <a
+                     href="https://www.instagram.com/"
+                     target="_blank"
+                     class="introduce__icon"
+                  >
+                     <img src="img/icons/instagram.svg" alt="" />
+                  </a>
+                  <a
+                     href="https://web.telegram.org/"
+                     target="_blank"
+                     class="introduce__icon"
+                  >
+                     <img src="img/icons/telegram.svg" alt="" />
+                  </a>
                </div>
             </div>
-         </section>
-      </div>
+         </div>
+      </section>
+
       <section class="about">
          <div class="wrapper">
             <div class="about__wrapper">
                <div class="about__info">
-                  <div class="about__caption">О нас</div>
-                  <div class="about__stick"></div>
+                  <div class="about__caption title">О нас</div>
+
                   <div class="about__description">
                      Коллектив профессионалов, безумно любящих свое дело! Мы
                      располагаемся в разных уголках России, чтобы подарить вам
@@ -101,11 +116,271 @@
                   </div>
                </div>
                <div class="about__img">
-                  <img src="img/nature/about.png" alt="" />
+                  <img src="img/about/about.png" alt="" />
                </div>
             </div>
          </div>
       </section>
+
+      <section class="organisation">
+         <div class="wrapper">
+            <div class="organisation__wrapper">
+               <div class="organisation__img">
+                  <img src="img/organisation/surf.png" alt="" />
+               </div>
+               <div class="organisation__info">
+                  <div class="organisation__title">
+                     <p>
+                        Наша команда возьмет на себя отвественность за
+                        организацию всего тура:
+                     </p>
+                  </div>
+
+                  <div class="organisation__responsibilities">
+                     <div class="organisation__block title">
+                        <div class="organisation__nums">1</div>
+                        <div class="organisation__txt">Подбор маршрута</div>
+                     </div>
+                     <div class="organisation__block title">
+                        <div class="organisation__nums">2</div>
+                        <div class="organisation__txt">Сопровождение</div>
+                     </div>
+                     <div class="organisation__block title">
+                        <div class="organisation__nums">3</div>
+                        <div class="organisation__txt">Обучение</div>
+                     </div>
+                     <div class="organisation__block title">
+                        <div class="organisation__nums">4</div>
+                        <div class="organisation__txt">
+                           Комплект оборудования
+                        </div>
+                     </div>
+                     <div class="organisation__block">
+                        <div class="organisation__nums">5</div>
+                        <div class="organisation__txt">Фото и видео съемка</div>
+                     </div>
+                     <div class="organisation__block">
+                        <div class="organisation__nums">6</div>
+                        <div class="organisation__txt">Страховка</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="second-layer"></div>
+      </section>
+
+      <section class="tour-selection">
+         <div class="wrapper">
+            <div class="tour-selection__title">Выбор тура</div>
+            <div class="tour-selection__wrapper">
+               <div class="tour-selection__card">
+                  <div class="tour-selection__caption">Индивидуальный тур</div>
+                  <div class="tour-selection__sub-caption title title-centered">
+                     (от 1 до 5 чел)
+                  </div>
+                  <div class="tour-selection__description">
+                     Тур планируется в удобную для вас дату. Мы учтем все ваши
+                     пожелания и организуем максимально комфортную прогулку
+                  </div>
+                  <div class="tour-selection__price">
+                     <span>3500</span> р/чел
+                  </div>
+                  <button class="btn btn--wide">Забронировать</button>
+               </div>
+               <div class="tour-selection__card">
+                  <div class="tour-selection__caption">Авторский тур</div>
+                  <div class="tour-selection__sub-caption title title-centered">
+                     (от 10 до 15 чел)
+                  </div>
+                  <div class="tour-selection__description">
+                     Мы запланировали маршрут! Выбирайте подходящий город и
+                     дату. Отправляйтесь в путешествие в нашей дружной компании!
+                  </div>
+                  <div class="tour-selection__price">
+                     <span>2500</span> р/чел
+                  </div>
+                  <button class="btn btn--wide">Забронировать</button>
+               </div>
+               <div class="tour-selection__card">
+                  <div class="tour-selection__caption">Корпоративный тур</div>
+                  <div class="tour-selection__sub-caption title title-centered">
+                     для вас и ваших сотрудников
+                  </div>
+                  <div class="tour-selection__description">
+                     Организуем эффективный и продуманный тимбилдинг. Спорт и
+                     релакс в одной прогулке.
+                  </div>
+                  <div class="tour-selection__price">
+                     <span>2000</span> р/чел
+                  </div>
+                  <button class="btn btn--wide">Забронировать</button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="gallery">
+         <div class="wrapper">
+            <div class="gallery__wrapper">
+               <div class="gallery__info">
+                  <div class="gallery__title">
+                     Просмотрите <br />
+                     галерею
+                  </div>
+                  <div class="gallery__desc">
+                     С нами вы так же сможете наслаждаться пейзажами и получать
+                     удовольствие от прогулки
+                  </div>
+                  <button class="btn btn-long">Забронировать</button>
+               </div>
+               <div class="gallery__right">
+                  <div class="swiper">
+                     <!-- Additional required wrapper -->
+                     <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                           <img src="./img/gallery/gallery.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="./img/gallery/gallery.png" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="./img/gallery/gallery.png" alt="" />
+                        </div>
+                     </div>
+                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-button-next"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="advantages">
+         <div class="wrapper">
+            <div class="advantages__title">Наши преимущества</div>
+            <div class="advantages__wrapper">
+               <div class="advantages__info">
+                  <div class="advantages__caption title title-top">
+                     Подходит новичкам и профессионалам
+                  </div>
+                  <div class="advantages__sub-caption">
+                     Мы всему научим! Возраст, пол и ваш навык не имеют
+                     значения.
+                  </div>
+               </div>
+               <div class="advantages__info">
+                  <div class="advantages__caption title title-top">
+                     Комфорт и сопровождение
+                  </div>
+                  <div class="advantages__sub-caption">
+                     Вы можете положить свои вещи в лодку нашего инструктора.
+                  </div>
+               </div>
+               <div class="advantages__info">
+                  <div class="advantages__caption title title-top">
+                     Лучшее оборудование
+                  </div>
+                  <div class="advantages__sub-caption">
+                     Мы закупаем снаряжение только у высококлассных
+                     производителей.
+                  </div>
+               </div>
+               <div class="advantages__info">
+                  <div class="advantages__caption title title-top">
+                     Мы любим ваших животных
+                  </div>
+                  <div class="advantages__sub-caption">
+                     Ваша собака скучает дома? Берите ее на прогулку с собой
+                  </div>
+               </div>
+               <div class="advantages__info">
+                  <div class="advantages__caption title title-top">
+                     Перенос прогулки
+                  </div>
+                  <div class="advantages__sub-caption">
+                     Вы можете перенести прогулку на другую дату
+                  </div>
+               </div>
+               <div class="advantages__info">
+                  <div class="advantages__caption title title-top">
+                     Разнообразие маршрутов
+                  </div>
+                  <div class="advantages__sub-caption">
+                     Мы постоянно генерируем идеи для новыз прогулок. Нам важно
+                     удивить вас!
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="contact-number">
+         <div class="wrapper">
+            <div class="contact-number__wrapper">
+               <form class="contact-number__form">
+                  <div class="contact-number__title">Остались вопросы?</div>
+                  <div class="contact-number__sub-title">
+                     Оставьте заявку и наш менеджер свяжется с вами в течении 15
+                     минут
+                  </div>
+
+                  <input
+                     type="text"
+                     class="contact-number__inp"
+                     placeholder="Имя"
+                     name="name"
+                  />
+                  <input
+                     type="number"
+                     class="contact-number__inp"
+                     placeholder="Номер телефона"
+                     name="phone"
+                  />
+
+                  <button type="submit" class="btn btn-transparent">
+                     Отправить
+                  </button>
+
+                  <div class="contact-number__privacy">
+                     Заполняя форму вы соглашаетесь с нашей <br />
+                     <span>Политикой конфиденциальности</span>
+                  </div>
+               </form>
+
+               <div class="contact-number__img">
+                  <img src="./img/contact-number/contact.png" alt="" />
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer class="footer">
+         <div class="wrapper">
+            <div class="footer__wrapper">
+               <div class="logo footer__logo">
+                  <img src="./img/icons/logo.svg" alt="" />
+               </div>
+               <nav class="menu footer__menu">
+                  <ul>
+                     <li><a href="#">О нас</a></li>
+                     <li><a href="#">Услуги</a></li>
+                     <li><a href="#">Контакты</a></li>
+                     <li><a href="#">Выбор тура</a></li>
+                  </ul>
+               </nav>
+
+               <a href="tel:+7 495-249-00-44" class="number footer__number"
+                  >+7 495-249-00-44</a
+               >
+            </div>
+         </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
       <script src="js/script.js"></script>
    </body>
 </html>
