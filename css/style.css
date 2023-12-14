@@ -1224,8 +1224,16 @@ a {
       margin-top: 15px;
    }
 
+   .advantages__wrapper {
+      padding-top: 25px;
+   }
+
    .advantages__info {
       width: calc(50% - 40px);
+   }
+
+   .advantages__info:nth-child(n + 3) {
+      margin-top: 50px;
    }
 
    .contact-number__wrapper {
@@ -1509,15 +1517,15 @@ a {
    }
 
    .advantages__wrapper {
-      gap: 40px;
+      gap: 25px;
+   }
+
+   .advantages__info {
+      margin-top: 0px;
    }
 
    .advantages__title {
       font-size: 31px;
-   }
-
-   .advantages__info:nth-child(n + 4) {
-      margin-top: 0;
    }
 
    .advantages__sub-caption {
@@ -1599,6 +1607,10 @@ a {
 
    .advantages__info {
       width: 100%;
+   }
+
+   .advantages__info:nth-child(n + 1) {
+      margin-top: 0px;
    }
 }
 
