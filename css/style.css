@@ -215,14 +215,17 @@ a {
    width: 40%;
 }
 
-.about__top {
+/* .about__top {
    margin-bottom: 34px;
-}
+} */
 
 .about__caption {
    font-size: 43px;
-   margin: 0;
+   margin: 0 0 34px 0;
    font-weight: normal;
+}
+.about__line {
+   margin-bottom: 34px;
 }
 
 .about__stick {
@@ -265,19 +268,13 @@ a {
    width: 33.333%;
 }
 
-.title {
-   position: relative;
-
-   padding-bottom: 34px;
-}
-.title::before {
-   content: "";
-   position: absolute;
+/* .title {
+   font-size: 43px;
+} */
+.line {
    width: 124px;
    height: 2px;
    background-color: #ffbf1a;
-   left: 0;
-   bottom: 0;
 }
 
 .title-centered::before {
@@ -396,9 +393,16 @@ a {
 }
 
 .organisation__block {
-   display: flex;
    width: calc(50% - 20px);
+}
+.organisation__box {
+   display: flex;
+   width: 100%;
    gap: 7px;
+}
+
+.organisation__line {
+   margin-top: 34px;
 }
 
 .organisation__nums {
@@ -485,6 +489,10 @@ a {
 .tour-selection__caption {
    font-size: 30px;
    margin-bottom: 28px;
+}
+
+.tour-selection__line {
+   margin-top: 34px;
 }
 
 .tour-selection__sub-caption {
@@ -626,6 +634,10 @@ a {
    justify-content: space-between;
    flex-wrap: wrap;
    gap: 30px;
+}
+
+.advantages__line {
+   margin-bottom: 34px;
 }
 
 .advantages__sub-caption {
@@ -1337,6 +1349,9 @@ a {
 }
 
 @media (max-width: 600px) {
+   .organisation__line {
+      margin-top: 24px;
+   }
    .gallery {
       padding-top: 25px;
       padding-bottom: 0px;
@@ -1517,7 +1532,7 @@ a {
    }
 
    .advantages__wrapper {
-      gap: 25px;
+      gap: 30px;
    }
 
    .advantages__info {
